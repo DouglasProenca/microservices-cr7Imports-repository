@@ -1,8 +1,5 @@
 spring:
 
-  application:
-    name: apicr7imports
-
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/Cr7Imports?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
