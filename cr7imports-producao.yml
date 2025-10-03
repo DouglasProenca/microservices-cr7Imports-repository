@@ -4,6 +4,12 @@ spring:
     host: host.docker.internal
     port: 6379
 
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://host.docker.internal:3306/Cr7Imports?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: password  
+
   flyway:
     baselineOnMigrate: true
     enabled: true
