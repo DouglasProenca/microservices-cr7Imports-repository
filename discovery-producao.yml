@@ -11,7 +11,7 @@ spring:
 ## Eureka - Service Discovery
 eureka:
   client:
-    register-with-eureka: true
+    register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://cr7Discovery:8761/eureka/
