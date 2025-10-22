@@ -59,3 +59,7 @@ security:
            token:
                expire_length: 3600000
                secret_key: secret    
+
+logging:
+   level:
+     com.netflix.discovery: DEBUG			   
