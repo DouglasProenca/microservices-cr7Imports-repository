@@ -1,7 +1,7 @@
 ## Configuração Default da Aplicação ##
 server:
    host: localhost
-   port: 8881	
+   port: 8761	
 
 ## Config Application
 spring:
@@ -14,7 +14,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: false
     service-url:
-      defaultZone: http://cr7Discovery:8081/eureka/
+      defaultZone: http://cr7Discovery:8761/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
     peer-node-read-timeout-ms: 2000
