@@ -2,8 +2,13 @@ eureka:
   host: cr7Discovery
   name: eureka
   port: 8081
+  client:
+      register-with-eureka: false
+      fetch-registry: false 
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
 logging:
   level:
     root: WARN
     com.sistema.cr7ImportsDiscovery.Cr7ImportsDiscovery: INFO
+	
+	
