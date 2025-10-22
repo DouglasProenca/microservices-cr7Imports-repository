@@ -64,5 +64,5 @@ eureka:
   client:
     service-url:
        defaultZone: http://cr7Discovery:8761/eureka/
-       register-with-eureka: true
-       fetch-registry: true	   
+    register-with-eureka: true
+    fetch-registry: true	   
