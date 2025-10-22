@@ -3,7 +3,7 @@ eureka:
   name: eureka
   port: 8081
   client:
-     register-with-eureka: true
+     register-with-eureka: false
      fetch-registry: false 
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
 logging:
