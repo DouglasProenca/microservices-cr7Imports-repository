@@ -62,5 +62,7 @@ security:
 
 eureka:
   client:
+    service-url:
+        defaultZone: http://cr7Discovery:8081/eureka/	
     register-with-eureka: true
     fetch-registry: true	   
