@@ -1,7 +1,7 @@
 ## Configuração Default da Aplicação ##
 server:
-  ## HTTP Server port
-  port: 8081
+   host: localhost
+   port: 8881	
 
 ## Config Application
 spring:
