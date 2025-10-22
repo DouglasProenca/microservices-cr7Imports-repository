@@ -1,4 +1,6 @@
 spring:
+  application:
+     name: apicr7imports
 
   redis:
     host: host.docker.internal
