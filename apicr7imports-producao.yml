@@ -60,6 +60,9 @@ security:
                expire_length: 3600000
                secret_key: secret    
 
-logging:
-   level:
-     com.netflix.discovery: DEBUG			   
+eureka:
+  client:
+    service-url:
+       defaultZone: http://cr7Discovery:8761/eureka/
+       register-with-eureka: true
+       fetch-registry: true	   
