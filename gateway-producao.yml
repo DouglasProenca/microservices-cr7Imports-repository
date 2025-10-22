@@ -57,10 +57,6 @@ springdoc:
       tags-sorter: alpha
       operations-sorter: alpha  
 
-eureka:
-   instance:
-      prefer-ip-address: true
-
 ## Application settings
 settings:
 # Address configuration
@@ -72,4 +68,13 @@ logging:
       root: INFO
       com.sistema.cr7ImportsGateway: DEBUG
       io.swagger.models.parameters.AbstractSerializableParameter: DEBUG
-      org.hibernate.SQL: DEBUG               
+      org.hibernate.SQL: DEBUG   
+
+## Eureka - Service Discovery
+eureka:
+   instance:
+      prefer-ip-address: true
+      client:
+         service-url:
+             defaultZone: http://cr7Discovery:8761/eureka/
+      register-with-eureka: true	              
