@@ -1,4 +1,11 @@
+spring:
+  application:
+    name: cr7Discovery
+
+server:
+  port: 8761
+
 eureka:
-  host: localhost
-  name: eureka
-  port: 8081
+  client:
+    register-with-eureka: false
+    fetch-registry: false
