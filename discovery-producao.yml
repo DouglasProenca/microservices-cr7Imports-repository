@@ -6,7 +6,7 @@ server:
 ## Config Application
 spring:
   application:
-    name: discovery
+    name: cr7Discovery
 
 ## Eureka - Service Discovery
 eureka:
