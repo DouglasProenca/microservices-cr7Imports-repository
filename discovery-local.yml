@@ -1,12 +1,9 @@
-spring:
-  application:
-    name: cr7Discovery
-
-server:
-  port: 8761
-
 eureka:
-  client:
-    enabled: false
-    register-with-eureka: false
-    fetch-registry: false
+  host: cr7Discovery
+  name: eureka
+  port: 8081
+## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
+logging:
+  level:
+    root: WARN
+    com.sistema.cr7ImportsDiscovery.Cr7ImportsDiscovery: INFO
