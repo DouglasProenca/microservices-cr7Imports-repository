@@ -60,9 +60,8 @@ security:
                expire_length: 3600000
                secret_key: secret    
 
+## Eureka - Service Discovery
 eureka:
-  client:
-    service-url:
-       defaultZone: http://cr7Discovery:8761/eureka/
-    register-with-eureka: true
-    fetch-registry: true	   
+    host: cr7Discovery
+    name: eureka
+    port: 8081 

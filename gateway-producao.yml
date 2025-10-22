@@ -72,9 +72,6 @@ logging:
 
 ## Eureka - Service Discovery
 eureka:
-   instance:
-      prefer-ip-address: true
-      client:
-         service-url:
-             defaultZone: http://cr7Discovery:8761/eureka/
-      register-with-eureka: true	              
+    host: cr7Discovery
+    name: eureka
+    port: 8081              
