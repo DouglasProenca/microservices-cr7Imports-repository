@@ -72,6 +72,8 @@ logging:
 
 ## Eureka - Service Discovery
 eureka:
-    host: cr7Discovery
-    name: eureka
-    port: 8081              
+  client:
+    service-url:
+        defaultZone: http://cr7Discovery:8081/eureka/	
+    register-with-eureka: true
+    fetch-registry: true	            
