@@ -5,6 +5,7 @@ spring:
   redis:
     host: host.docker.internal
     port: 6379
+    password: password	
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
