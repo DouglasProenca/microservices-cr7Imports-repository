@@ -1,8 +1,24 @@
 ## Configuração Default da Aplicação ##
+server:
+   host: 0.0.0.0
+   port: 8081	
+
+## Config Application
+spring:
+  application:
+    name: cr7Discovery
+
+## Eureka - Service Discovery
 eureka:
-  host: cr7Discovery
-  name: eureka
-  port: 8081
+    client:
+       service-url:
+           defaultZone: http://0.0.0.0:8081/eureka/		
+       registerWithEureka: true
+       fetchRegistry: false
+    server:
+        wait-time-in-ms-when-sync-empty: 3000
+        peer-node-read-timeout-ms: 2000
+        peer-node-connect-timeout-ms: 2000
 
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
 logging:
