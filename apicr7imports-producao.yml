@@ -59,7 +59,7 @@ security:
          jwt:
            token:
                expire_length: 3600000
-               secret_key: secret    
+               secret_key: secretGrandeParaQueOGatewayPossaAceitar    
 
 eureka:
   client:
