@@ -52,7 +52,22 @@ management:
         enabled: true
         show-details: always
       prometheus:
-        enabled: true				
+        enabled: true	
+
+## Mail
+mail:
+  config:
+      port: 587
+      host: smtp.gmail.com
+      transport:
+           protocol: smtp
+      properties:
+              mail:
+               smtp:
+               auth: true  
+               starttls:
+                    enable: true
+      debug: false						
 
 ## Token valido por 1h  
 security:
